@@ -1,0 +1,118 @@
+.form {
+    display: flex;
+    margin: 5%;
+    width: auto;
+    height: auto;
+    
+  }
+  
+  .form__content {
+    background: rgb(35, 65, 65);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    
+    max-width: 85vw;
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  .listoh2{
+    font-size: 40px;
+    color: aqua;
+    user-select: none;
+    cursor: default;
+  }
+  .enviado-message {
+    margin-top: 10px;
+    font-size: 18px;
+    color: green;
+    text-align: center;
+    animation: fadeOut 2s ease-in-out forwards;
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+ 
+  .form-group input {
+    width: 80vw;
+    padding: 10px;
+    background: rgb(41, 82, 84);
+    border-radius: 5px;
+    transition: ease all .3s;
+    border: none;
+    color: #3498db;
+    font-size: 20px;
+    font-weight: 900;
+    outline: none; 
+    box-shadow: none;
+    padding-right: 10px;
+  }
+  
+  .form-group input:focus{
+    background: #ccc;
+    border: none;
+    outline: none; 
+    box-shadow: none;
+  }
+  .form-group .label {
+    
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: transform 0.3s, font-size 0.3s, color 0.3s;
+  }
+  .listButon{
+    text-align: center;
+  }
+  
+  .form-group input#asunto {
+    height: 200px;
+    resize: vertical; 
+  }
+  
+  
+ .asunto{
+  color: #90d0fa;
+  background: rgb(41, 82, 84);
+  border-radius: 10px;
+  font-size: 1em;
+ } 
+  .form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  transform: translateY(-150%) translateX(-5px);
+  
+  color: #90d0fa;
+  background: rgb(41, 82, 84);
+  border-radius: 10px;
+  font-size: 1em;
+  transition: all ease .3s;
+}
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label:focus{
+  color: #000000;
+  background: #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+  
+}
+  .button {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }

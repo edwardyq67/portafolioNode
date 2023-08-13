@@ -1,0 +1,95 @@
+.Inicio{
+  background: rgb(41, 82, 84);
+  color: rgb(127, 198, 255);
+}
+
+.imgP{
+    width: 350px;
+    height: auto;
+    padding: 1em 1em 0 1em;
+    border: solid 2px aqua;
+    transition: all ease .2s;
+}
+.slider {
+    width: 100vw;
+    height: auto;
+    background-color: rgba(143, 142, 142, 0.1);
+    color: aqua;
+
+  }
+  
+  .slide-track {
+    display: flex;
+    animation: scroll 5s linear alternate-reverse infinite; /* Ajustado el tiempo de animación */
+    width: calc(15em * 10); /* Ajustado el ancho */
+    font-weight:900;
+   
+  }
+  
+  .lenguajes {
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+    width: 100%; /* Ancho de cada diapositiva */
+  }
+  
+  .lenguajes img {    
+    height: auto;
+    width: 10em; 
+    
+  }@media (max-width: 767px) {
+    .slide-track {
+        width: calc(10em * 2*3);
+        animation: scroll 10s alternate-reverse linear infinite;
+        transform: translateX(0);
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(calc(-45em*2));
+        }
+        100% {
+          transform: translateX(calc(2em * 2)); /* Desplazamiento a la última diapositiva */
+        }
+      }
+  }
+  
+  /* Estilos para tablets en modo vertical */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .slide-track {
+        width: calc(10em *5);
+        animation: scroll 10s alternate-reverse linear infinite;
+        transform: translateX(0);
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(calc(-17em*4));
+        }
+        100% {
+          transform: translateX(calc(1em * 4)); /* Desplazamiento a la última diapositiva */
+        }
+      }
+  }
+  
+  /* Estilos para tablets en modo horizontal y desktops */
+  @media (min-width: 992px) {
+    .slide-track {
+      width: calc(15em * 10);
+      animation: scroll 5s alternate linear infinite;
+      transform: translateX(0);
+    }
+    @keyframes scroll {
+        0% {
+         transform: translateX(calc(10px * 5));
+        }
+        100% {
+         transform: translateX(calc(-100px * 5)); /* Desplazamiento de 4 elementos */
+        }
+      }
+  }
+  
+  
+  
